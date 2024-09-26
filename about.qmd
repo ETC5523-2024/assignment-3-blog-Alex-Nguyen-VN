@@ -6,8 +6,9 @@ about:
   links:
     - icon: github
       text: Github
-      href: https://github.com/etc5523-2022
+      href: https://github.com/Alex-Nguyen-VN
 
 ---
 
-This is a blog template for the ETC5523 Communicating with Data assessment at Monash University.
+I'm Thanh Cuong Nguyen (Alex), a Business Analytics professional currently pursuing my Master's at Monash University. With a background in data analysis and project management, I’ve worked at the Trade Remedies Authority of Vietnam, assessing the impact of international trade and protecting domestic industries. I've also participated in global competitions like the Kellogg-Morgan Sustainable Financing Contest and the IFC Impact Investing Challenge, honing my skills in data visualization and predictive modeling. I’m passionate about using data to drive impactful business decisions.
+
