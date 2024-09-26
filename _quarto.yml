@@ -2,16 +2,42 @@ project:
   type: website
 
 website:
-  title: "A clumpsy data analyst blog"
-  navbar:
+  page-navigation: true
+  title: "Alex Nguyen"
+  site-url: "https://beamilz.com/"
+  page-footer:
+    left: "Website made with [Quarto](https://quarto.org/), by Alex Nguyen. License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)."
     right:
-      - about.qmd
+      - icon: envelope
+        href: mailto:thanhcuong10091992@gmail.com
       - icon: github
         href: https://github.com/Alex-Nguyen-VN
+      - icon: linkedin
+        href: https://www.linkedin.com/in/nguyen-thanh-cuong-20849552/
+
+
+  navbar:
+    right:
+      - text: About
+        href: about.qmd
+      - text: Posts
+        href: posts/index.qmd
+
+lang: en
+
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    link-external-icon: true
+    link-external-newwindow: true
+    smooth-scroll: true
+    theme:
+      - styles.scss
+    citations-hover: true
+    footnotes-hover: true
+    toc: true
+    code-link: true
+
+editor: visual
 
 
 
