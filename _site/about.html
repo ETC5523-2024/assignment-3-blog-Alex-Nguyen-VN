@@ -68,6 +68,10 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 
 
+<meta property="og:title" content="Alex Nguyen - About">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://alexnguyen.github.io/profile.jpg">
+<meta property="og:site_name" content="Alex Nguyen">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -76,17 +80,16 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Alex Nguyen</span>
-    </a>
-  </div>
             <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./about.html" aria-current="page"> 
 <span class="menu-text">About</span></a>
@@ -108,27 +111,44 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-jolla content">
-  <img src="profile.jpg" class="about-image
-  round " style="height: 15em; width: 15em;">
- <header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-about-trestles content">
+  <div class="about-entity">
+    <img src="profile.jpg" class="about-image
+  rounded " style="width: 20em;">
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">About</h1>
 </div>
 <div class="quarto-title-meta">
   </div>
-</header><main class="content" id="quarto-document-content">
-<p>I’m Thanh Cuong Nguyen (Alex), a Business Analytics professional currently pursuing my Master’s at Monash University. With a background in data analysis and project management, I’ve worked at the Trade Remedies Authority of Vietnam, assessing the impact of international trade and protecting domestic industries. I’ve also participated in global competitions like the Kellogg-Morgan Sustainable Financing Contest and the IFC Impact Investing Challenge, honing my skills in data visualization and predictive modeling. I’m passionate about using data to drive impactful business decisions.</p>
-
-
-</main> 
-  <hr class="about-sep">
-   <div class="about-links">
+</header>
+    <div class="about-links">
   <a href="https://github.com/Alex-Nguyen-VN" class="about-link" rel="" target="">
     <i class="bi bi-github"></i>
      <span class="about-link-text">Github</span>
   </a>
 </div>
+  </div>
+  <div class="about-contents"><main class="content" id="quarto-document-content">
+<p>I am a dynamic and results-oriented professional pursuing a career in Business Analytics. With a strong foundation in data analysis, project management, and strategic planning gained from diverse roles, I am eager to leverage my skills to drive business decisions and strategies.</p>
+<section id="education" class="level4">
+<h4 data-anchor-id="education">Education</h4>
+<p><strong>Monash University</strong> | Melbourne, Australia<br>
+Master of Business Analytics | Expected 2026</p>
+<p><strong>National Economic University</strong> | Hanoi, Viet Nam<br>
+Bachelor of Business Administration | 2010-2014.</p>
+</section>
+<section id="experience" class="level4">
+<h4 data-anchor-id="experience">Experience</h4>
+<p><strong>Data Analyst</strong> | Trade Remedies Authority of Viet Nam | Jan 2019 - Jan 2023</p>
+</section>
+<section id="achievements" class="level4">
+<h4 data-anchor-id="achievements">Achievements</h4>
+<p>Kellogg-Morgan Sustainable Financing Contest 2024 | Finalist</p>
+
+
+</section>
+</main></div>
 </div>
  <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -205,7 +225,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/beamilz\.com\/");
+      var filterRegex = new RegExp("https:\/\/alexnguyen\.github\.io\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
