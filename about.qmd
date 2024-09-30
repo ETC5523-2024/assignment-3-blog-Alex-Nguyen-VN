@@ -2,13 +2,27 @@
 title: "About"
 image: profile.jpg
 about:
-  template: jolla
+  template: trestles
   links:
     - icon: github
       text: Github
       href: https://github.com/Alex-Nguyen-VN
-
 ---
 
-I'm Thanh Cuong Nguyen (Alex), a Business Analytics professional currently pursuing my Master's at Monash University. With a background in data analysis and project management, I’ve worked at the Trade Remedies Authority of Vietnam, assessing the impact of international trade and protecting domestic industries. I've also participated in global competitions like the Kellogg-Morgan Sustainable Financing Contest and the IFC Impact Investing Challenge, honing my skills in data visualization and predictive modeling. I’m passionate about using data to drive impactful business decisions.
+I am a dynamic and results-oriented professional pursuing a career in Business Analytics. With a strong foundation in data analysis, project management, and strategic planning gained from diverse roles, I am eager to leverage my skills to drive business decisions and strategies.
 
+#### Education
+
+**Monash University** \| Melbourne, Australia\
+Master of Business Analytics \| Expected 2026
+
+**National Economic University** \| Hanoi, Viet Nam\
+Bachelor of Business Administration \| 2010-2014.
+
+#### Experience
+
+**Data Analyst** \| Trade Remedies Authority of Viet Nam \| Jan 2019 - Jan 2023
+
+#### Achievements
+
+Kellogg-Morgan Sustainable Financing Contest 2024 \| Finalist
