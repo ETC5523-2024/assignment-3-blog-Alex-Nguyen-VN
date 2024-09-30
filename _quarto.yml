@@ -4,7 +4,8 @@ project:
 website:
   page-navigation: true
   title: "Alex Nguyen"
-  site-url: "https://beamilz.com/"
+  site-url: "https://alexnguyen.github.io/"
+  open-graph: true
   page-footer:
     left: "Website made with [Quarto](https://quarto.org/), by Alex Nguyen. License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)."
     right:
@@ -17,7 +18,10 @@ website:
 
 
   navbar:
-    right:
+    title: false
+    left:
+      - text: Home
+        href: index.qmd
       - text: About
         href: about.qmd
       - text: Posts
@@ -31,6 +35,7 @@ format:
     link-external-newwindow: true
     smooth-scroll: true
     theme:
+      - flatly
       - styles.scss
     citations-hover: true
     footnotes-hover: true
@@ -38,6 +43,7 @@ format:
     code-link: true
 
 editor: visual
-
+execute:
+  freeze: true
 
 
