@@ -16,7 +16,6 @@ website:
       - icon: linkedin
         href: https://www.linkedin.com/in/nguyen-thanh-cuong-20849552/
 
-
   navbar:
     title: false
     left:

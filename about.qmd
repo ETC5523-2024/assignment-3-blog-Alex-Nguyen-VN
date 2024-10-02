@@ -7,6 +7,9 @@ about:
     - icon: github
       text: Github
       href: https://github.com/Alex-Nguyen-VN
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/nguyen-thanh-cuong-20849552/
 ---
 
 I am a dynamic and results-oriented professional pursuing a career in Business Analytics. With a strong foundation in data analysis, project management, and strategic planning gained from diverse roles, I am eager to leverage my skills to drive business decisions and strategies.
