@@ -4,7 +4,7 @@ author: "Thanh Cuong Nguyen"
 bibliography: citation.bib
 date: "2024-09-30"
 categories: [news]
-image: "duck-resized.png"
+image: "Krakeend_Anas_strepera_Jos_Zwarts_1.jpeg"
 toc: true
 toc-depth: 4
 ---
@@ -275,11 +275,12 @@ The data used in this analysis is derived from the National Electricity Market (
 Based on the official dataset description, the dataset includes the following key variables:
 
 | Variables Name     | Data Types   | Mean                                            |
-|----------------------|---------------|-----------------------------------|
+|---------------------|------------------|----------------------------------|
 | INTERVAL_DATETIME  | date         | Date time interval for operational demand value |
 | REGIONID           | Varchar2(20) | Region identifier                               |
 | OPERATIONAL_DEMAND | number(10,0) | Operational demand value                        |
 | LASTCHANGED        | date         | Last date and time record changed               |
+
 : Variable description {#tbl-variable-desc}
 
 As @tbl-variable-desc shows, the dataset includes information on operational demand, region identifiers, and the date and time of the last record change. This data is essential for understanding the dynamics of energy demand and supply in the NEM. However, since the Interval_Datetime variables is stored as character instead of date as stated in the official record shown above, we need to convert it into a date-time format and break it down for further analysis.
@@ -320,7 +321,6 @@ actual_demand_june <- actual_demand_june |>
 actual_demand_june <- actual_demand_june |>
   mutate(TIME = hms(TIME))
 ```
-
 
 ## Analysis
 
