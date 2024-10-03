@@ -16,7 +16,7 @@ format:
 ---
 <style>
   body {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%), url("/docs/assets/img/black-white-landscape-with-fog.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%), url("/assets/img/black-white-landscape-with-fog.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -51,5 +51,4 @@ format:
   <p>Kellogg-Morgan Sustainable Financing Contest 2024 | Finalist</p>
   </div>
 </div>
-
 ```
