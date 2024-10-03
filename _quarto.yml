@@ -7,25 +7,6 @@ website:
   title: "Alex Nguyen"
   site-url: "https://alexnguyen.github.io/"
   open-graph: true
-  page-footer:
-    left: "Website made with [Quarto](https://quarto.org/), by Alex Nguyen. License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)."
-    right:
-      - icon: envelope
-        href: mailto:thanhcuong10091992@gmail.com
-      - icon: github
-        href: https://github.com/Alex-Nguyen-VN
-      - icon: linkedin
-        href: https://www.linkedin.com/in/nguyen-thanh-cuong-20849552/
-
-  navbar:
-    title: false
-    left:
-      - text: Home
-        href: index.qmd
-      - text: About
-        href: about.qmd
-      - text: Posts
-        href: posts/index.qmd
 
 lang: en
 
@@ -34,13 +15,19 @@ format:
     link-external-icon: true
     link-external-newwindow: true
     smooth-scroll: true
-    theme:
-      - flatly
-      - styles.scss
     citations-hover: true
     footnotes-hover: true
     toc: true
     code-link: true
+    googlefonts:
+      - Varela+Round
+      - Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i
+    css: css/styles.css
+    include-in-header:
+      - includes/header.html
+      - text: |
+          <script type="text/javascript" src="js/scripts.js"></script>
+    include-after-body: includes/footer.html
 
 editor: visual
 execute:

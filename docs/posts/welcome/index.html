@@ -76,7 +76,6 @@ div.csl-indent {
 }</style>
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
@@ -91,11 +90,11 @@ div.csl-indent {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
+  "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
+  "panel-placement": "start",
+  "type": "textbox",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -123,35 +122,27 @@ div.csl-indent {
 <meta property="og:site_name" content="Alex Nguyen">
 <meta property="og:image:height" content="427">
 <meta property="og:image:width" content="640">
-</head>
-<body class="nav-fixed">
+</head><body><nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav"><div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="../../index.html">A Clumsy Data Analyst Blog</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../posts/index.html">Post</a></li>
+            </ul>
+</div>
+    </div>
+</nav><script type="text/javascript" src="js/scripts.js"></script><link rel="stylesheet" href="../../css/styles.css">
+
+
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-<li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../posts/index.html"> 
-<span class="menu-text">Posts</span></a>
-  </li>  
-</ul>
-</div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
-</div>
-      </div> <!-- /container-fluid -->
-    </nav></header><!-- content --><header id="title-block-header" class="quarto-title-block default page-columns page-full"><div class="quarto-title-banner page-columns page-full">
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full"><div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <h1 class="title">The Duck Curve and the invisible player in the energy market</h1>
                                 <div class="quarto-categories">
@@ -181,7 +172,7 @@ div.csl-indent {
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -305,7 +296,7 @@ Table&nbsp;1: Variable description
 <p>The “Duck Curve” is a term used to describe the shape of the electricity demand curve over the course of a day <span class="citation" data-cites="jonesalbertus_2017_confronting">(<a href="#ref-jonesalbertus_2017_confronting" role="doc-biblioref">Jones-Albertus 2017</a>)</span>. The curve gets its name from its resemblance to a duck, with the belly of the duck representing the minimum demand during the day and the neck and head representing the peak demand in the evening.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="fig-1" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center" data-fig-pos="H">
+<div id="fig-1" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-pos="H" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="index_files/figure-html/fig-1-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" data-fig-pos="H">
 </div>
@@ -318,7 +309,7 @@ Figure&nbsp;1: Mean operational demand for all regions in June 2024
 <p>We can see the change of this curve over the course of the day, with the lowest demand occurring in the early hours of the morning and the highest demand occurring in the evening. This pattern is consistent across all regions, with some variation in the magnitude of demand. It is also important to note that this pattern is repeated every day, regardless of the day of the week, as shown in <a href="#fig-2" class="quarto-xref">Figure&nbsp;2</a> below:</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="fig-2" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center" data-fig-pos="H">
+<div id="fig-2" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-pos="H" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="index_files/figure-html/fig-2-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" data-fig-pos="H">
 </div>
@@ -343,7 +334,7 @@ Figure&nbsp;2: Heatmap of operational demand for all regions in June 2024
 <p>The data was batch-loaded, transform from interval datetime into date, weekday and time in the day with the break of 30 minutes. The data dictionary was also published by AEMO can be found at this <a href="https://nemweb.com.au/Reports/Current/MMSDataModelReport/Electricity/MMS%20Data%20Model%20Report_files/MMS_97.htm#1">link</a>. <a href="#fig-3" class="quarto-xref">Figure&nbsp;3</a> shows the mean rooftop solar generation for all regions in the NEM over the course of the day. The x-axis represents the time of day, while the y-axis represents the mean demand in red and the mean generation of solar in black. The plot is faceted by region, allowing us to see how rooftop solar generation varies across different parts of the NEM.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="fig-3" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center" data-fig-pos="H">
+<div id="fig-3" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-pos="H" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="index_files/figure-html/fig-3-1.png" class="quarto-figure quarto-figure-center figure-img" style="width:80.0%;height:80.0%" data-fig-pos="H">
 </div>
@@ -364,7 +355,23 @@ Figure&nbsp;3: Mean operational demand and rooftop solar generation for all regi
 <div id="ref-jonesalbertus_2017_confronting" class="csl-entry" role="listitem">
 Jones-Albertus, Becca. 2017. <span>“Confronting the Duck Curve: How to Address over-Generation of Solar Energy.”</span> Energy.gov. <a href="https://www.energy.gov/eere/articles/confronting-duck-curve-how-address-over-generation-solar-energy">https://www.energy.gov/eere/articles/confronting-duck-curve-how-address-over-generation-solar-energy</a>.
 </div>
-</div></section></div></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</div></section></div></main><!-- /main --><footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">      
+    Website made with <a href="https://quarto.org/" target="_blank">Quarto</a>, by Alex Nguyen.
+    License: <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank">CC BY-SA 2.0</a>.
+  </div>
+  <div>
+    <a href="mailto:thanhcuong10091992@gmail.com" style="margin-right: 10px;">
+      <i class="fa fa-envelope"></i>
+    </a>
+    <a href="https://github.com/Alex-Nguyen-VN" style="margin-right: 10px;">
+      <i class="fa fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/nguyen-thanh-cuong-20849552/">
+      <i class="fa fa-linkedin"></i>
+    </a>
+</div>
+</footer><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><script src="../../js/scripts.js"></script><script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -772,37 +779,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer">
-    <div class="nav-footer-left">
-<p>Website made with <a href="https://quarto.org/">Quarto</a>, by Alex Nguyen. License: <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>.</p>
-</div>   
-    <div class="nav-footer-center">
-      &nbsp;
-    </div>
-    <div class="nav-footer-right">
-      <ul class="footer-items list-unstyled">
-<li class="nav-item compact">
-    <a class="nav-link" href="mailto:thanhcuong10091992@gmail.com">
-      <i class="bi bi-envelope" role="img">
-</i> 
-    </a>
-  </li>  
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/Alex-Nguyen-VN">
-      <i class="bi bi-github" role="img">
-</i> 
-    </a>
-  </li>  
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/nguyen-thanh-cuong-20849552/">
-      <i class="bi bi-linkedin" role="img">
-</i> 
-    </a>
-  </li>  
-</ul>
-</div>
-  </div>
-</footer>
+
 
 
 <script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
